@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre">
+            
+            <label for="Dirección">Dirección</label>
+            <input type="text" name="Dirección" id="Dirección">
+            
+            <label for="lista">Color Favorito</label>
+            <input type="text" name="lista" list="colores">
+            <datalist id="colores">
+                <option value="Rojo"></option>
+                <option value="Verde"></option>
+                <option value="Azul"></option>
+            </datalist>
+            
+            <label for="animales">Animal Favorito</label>
+            <select name="animales" id="animales">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="hipopótamo">Hipopótamo</option>
+            </select>
+
+            <button>Enviar</button>
+
+    </form>
+</body>
+</html>

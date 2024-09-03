@@ -1,0 +1,16 @@
+div, a {
+    background-color: chartreuse;
+}
+
+#division {
+    margin: 10%;
+    padding: 10%;
+    border-color: black;
+    border-style: solid;
+}
+
+div{
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+}

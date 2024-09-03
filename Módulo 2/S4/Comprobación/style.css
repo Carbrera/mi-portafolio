@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.rosado {
+    background-color: pink; 
+    height: 200px;
+}
+
+.verde {
+    background: green; 
+    height: 200px;
+}
+
+.azul {
+    background: blue; 
+    height: 100px;
+}
+
+.rojo {
+    background-color: red; 
+    height: 200px; 
+    display: none;
+}
+
+.morado {
+    background-color: purple;
+    height: 400px; 
+    display: none;
+}
+
+.gris {
+    background-color: gray; 
+    height: 400px;
+}
+
+
+@media (min-width: 501px) and (max-width: 750px) {
+    .rojo{
+        display: inline-block;
+    }
+
+    .azul{
+        height: 200px;
+    }
+    
+    .azul, .rojo{
+        width: 32%;
+        display: inline-block;
+    }
+
+    .verde{
+        width: 34%;
+        display: inline-block;
+    }
+
+    .morado{
+        width: 60%;
+        display: inline-block;
+    }
+
+    .gris{
+        width: 39%;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 751px) {
+    .rosado{
+        height: 100px;
+    }
+
+    .azul{
+        height: 400px;
+    }
+
+    .rojo{
+        display: block;
+        width: 33%;
+    }
+
+    .morado{
+        display: block;
+        width: 34%;
+        height: 200px;
+    }
+
+    .gris{
+        width: 33%;
+        height: 200px;
+    }
+
+    .rojo, .morado, .gris{
+        float: left;
+    }
+}
