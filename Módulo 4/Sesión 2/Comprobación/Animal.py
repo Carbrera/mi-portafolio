@@ -9,5 +9,5 @@ class Animal:
         f'Animal(nombre:{self.nombre})'
         
 # identificador =  Object(atributos, atributos)       
-caballo = Animal('Rayo', 2, 'pura sangre', 600)                   
-leon    = Animal('Leoncin', 3, 'Leon', '450')        
+caballo = Animal('Zeus', 5, 'pura sangre', 450)                   
+leon    = Animal('Boulder', 10, 'Atlas', 130)        

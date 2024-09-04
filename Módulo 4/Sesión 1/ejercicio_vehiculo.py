@@ -62,4 +62,4 @@ vehiculo_tres.alto = '1.7'
 vehiculo_tres.ancho = '1.87'
 
 print(vehiculo)
-print(vehiculo_uno)
+print(vehiculo_dos)
