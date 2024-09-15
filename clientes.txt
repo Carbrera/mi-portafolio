@@ -1,0 +1,1 @@
+Cliente(nombre=Carlitos, apellido=Lechuga, rut=1313, descuento=12%)
