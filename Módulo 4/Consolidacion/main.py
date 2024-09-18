@@ -1,4 +1,4 @@
-from vehiculos import Automovil
+from vehiculos import Vehiculo, Automovil, AutoParticular, AutoCarga, Bicicleta, Motocicleta
 
 #auto1 = Automovil('Toyota', 'Yaris', 4, 120, 800)
 #auto2 = Automovil('Fiat', 'Palio', 4, 95, 1200)
@@ -23,6 +23,22 @@ def main():
     for i, autos in enumerate(autos, 1):
         print(f'Datos del automóvil {i} : {autos}')
 
+main()
 
-if __name__ == '__main__':
-    main()
+particular = AutoParticular("Ford", "Fiesta", 4, "180", "500", 5) 
+carga = AutoCarga("Daft Trucks", "G 38", 10, 120, "1000", "20000") 
+bicicleta = Bicicleta("Shimano", "MT Ranger", 2, "Carrera") 
+motocicleta = Motocicleta("BMW", "F800s",2,"Deportiva","2T","Doble Viga", 21)
+
+print('\n')
+print(particular)
+print(carga)
+print(bicicleta)
+print(motocicleta)
+print('\n')
+print('Motocicleta es instancia con relación a Vehículo:', isinstance(motocicleta, Vehiculo))
+print('Motocicleta es instancia con relación a Automovil:', isinstance(motocicleta, Automovil))
+print('Motocicleta es instancia con relación a Vehículo particular:', isinstance(motocicleta, AutoParticular))
+print('Motocicleta es instancia con relación a Vehículo de Carga:', isinstance(motocicleta, AutoCarga))
+print('Motocicleta es instancia con relación a Bicicleta:', isinstance(motocicleta, Bicicleta))
+print('Motocicleta es instancia con relación a Motocicleta:', isinstance(motocicleta, Motocicleta))        

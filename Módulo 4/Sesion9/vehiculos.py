@@ -4,6 +4,30 @@ class Vehiculo:
         self.modelo = modelo
         self.nro_ruedas = nro_ruedas
         
+    @property
+    def marca(self):
+        return self._marca
+    
+    @marca.setter
+    def marca(self, marca) -> None:
+        self._marca = marca
+        
+    @property
+    def modelo(self):
+        return self._modelo
+    
+    @modelo.setter
+    def modelo(self, modelo) -> None:
+        self._modelo = modelo
+        
+    @property
+    def nro_ruedas(self):
+        return self._nro_ruedas
+    
+    @nro_ruedas.setter
+    def nro_ruedas(self, nro_ruedas) -> None:
+        self._nro_ruedas = nro_ruedas
+        
     def __str__(self):
         return f"Marca {self.marca}, Modelo {self.modelo}, {self.nro_ruedas} ruedas"
         
@@ -13,6 +37,22 @@ class Automovil(Vehiculo):
         self.velocidad = velocidad
         self.cilindraje = cilindraje
         
+    @property
+    def velocidad(self):
+        return self._velocidad
+    
+    @velocidad.setter
+    def velocidad(self, velocidad) -> None:
+        self._velocidad = velocidad
+        
+    @property
+    def cilindraje(self):
+        return self._cilindraje
+    
+    @cilindraje.setter
+    def cilindraje(self, cilindraje) -> None:
+        self._cilindraje = cilindraje
+    
     def __str__(self) -> str:
         return super().__str__() + f', {self.velocidad} km/h, {self.cilindraje} cc.'
                 
