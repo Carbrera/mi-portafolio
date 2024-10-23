@@ -1,0 +1,27 @@
+--python manage.py help makemigrations:
+
+Creates new migration(s) for apps.
+
+--python manage.py help migrate
+Updates database schema. Manages both apps with migrations and those without.
+
+--python manage.py help shell
+Runs a Python interactive interpreter. Tries to use IPython or bpython, if one of them is available. Any standard input is executed as code.
+
+--python manage.py help dbshell
+Runs the command-line client for specified database, or the default database if none is provided.
+
+--python manage.py help showmigrations
+Shows all available migrations for the current project
+
+--python manage.py help dumpdata
+Output the contents of the database as a fixture of the given format (using each model's default manager unless --all is specified).
+
+--python manage.py help test
+Discover and run tests in the specified modules or the current directory.
+
+--python manage.py help testserver
+Runs a development server with data from the given fixture(s).
+
+--python manage.py help diffsettings
+Displays differences between the current settings.py and Django's default settings.
