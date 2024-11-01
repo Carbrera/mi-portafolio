@@ -12,7 +12,7 @@ class IndexPageView(TemplateView): # un view con una clase
 def palindromo(request, palabra): # yo hago yoga hoy
     es_palindromo = ''
     
-    palabra_sin_espacios = palabra.relace(' ', '')  # yohagoyogahoy
+    palabra_sin_espacios = palabra.replace(' ', '')  # yohagoyogahoy
     if palabra_sin_espacios == palabra_sin_espacios[::-1] :
         es_palindromo = 'ES PALINDROMO'
     else:   # si no lo es

@@ -4,7 +4,7 @@ from .views import IndexPageView, palindromo
 
 urlpatterns = [
     # path('', views.index, name='index'),
-    path('inicio/', views.index, name='inicio'),
-    path('', IndexPageView.as_view(),name='index'),
+    # path('inicio/', views.index, name='inicio'),
+    path('', IndexPageView.as_view(), name='index'),
     path('palindromo/<str:palabra>', palindromo, name='palindromo')
 ]
