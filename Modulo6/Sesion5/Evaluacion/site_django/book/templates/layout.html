@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container">
+    {% block content %}
+    <!-- HEADER -->
+    <!--{% include 'navbar.html' %} Esto fue agregado-->
+    <!-- FOOTER -->
+    {% endblock %}
+    </div>
+
+    {% block javascript %}
+    {% endblock %}
+{% endblock %}
