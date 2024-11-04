@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h2><strong>Libros con valoración mayor a 1500</strong></h2>
+    {% if libros_caros %}
+        <ul>
+            {% for book in libros_caros %}
+                <li><strong>Título:</strong> {{ book.titulo }}, <strong>Autor:</strong> {{ book.autor }}, <strong>Valoración:</strong> {{ book.valoracion }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay libros con una valoración superior a 1500.</p>
+    {% endif %}
+
+    <hr>
+
+    <h2><strong>Listado de todos los libros:</strong></h2>
+    {% if total_libros %}
+        <ul>
+            {% for book in total_libros %}
+                <li><strong>Título:</strong> {{ book.titulo }}, <strong>Autor:</strong> {{ book.autor }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay libros disponibles.</p>
+    {% endif %}
+{% endblock %}
